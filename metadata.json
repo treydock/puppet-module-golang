@@ -64,6 +64,10 @@
       "version_requirement": ">= 5.0.0 < 7.0.0"
     }
   ],
+  "tags": [
+    "golang",
+    "go"
+  ],
   "pdk-version": "1.16.0",
   "template-url": "https://github.com/treydock/pdk-templates.git#master",
   "template-ref": "heads/master-0-gaddf0b8"
