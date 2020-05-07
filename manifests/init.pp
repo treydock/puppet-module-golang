@@ -53,25 +53,27 @@ class golang (
   archive { "${download_dir}/${file}":
     source          => "https://dl.google.com/go/${file}",
     extract         => true,
-    extract_path    => "${extract_dir}/go-${version}",
+    extract_path    => $install_dir,
     extract_command => 'tar xfz %s --strip-components=1',
-    creates         => "${extract_dir}/go-${version}/bin/go",
+    creates         => "${install_dir}/bin/go",
     cleanup         => true,
     user            => 'root',
     group           => 'root',
     require         => File[$install_dir],
     before          => [
-      File['/usr/bin/go'],
-      File['/usr/bin/gofmt'],
+      File['go-binary'],
+      File['gofmt-binary'],
     ]
   }
 
-  file { "${bin_dir}/go":
+  file { 'go-binary':
     ensure => 'link',
+    path   => "${bin_dir}/go",
     target => "${install_dir}/bin/go",
   }
-  file { "${bin_dir}/gofmt":
+  file { 'gofmt-binary':
     ensure => 'link',
+    path   => "${bin_dir}/gofmt",
     target => "${install_dir}/bin/gofmt",
   }
 }
