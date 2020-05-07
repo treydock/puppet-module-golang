@@ -28,18 +28,18 @@ describe 'golang' do
           group: 'root',
           require: 'File[/opt/go-1.13.8]',
           before: [
-            'File[/usr/bin/go]',
-            'File[/usr/bin/gofmt]',
+            'File[go-binary]',
+            'File[gofmt-binary]',
           ],
         )
       end
 
       it do
-        is_expected.to contain_file('/usr/bin/go').with(ensure: 'link', target: '/opt/go-1.13.8/bin/go')
+        is_expected.to contain_file('go-binary').with(ensure: 'link', path: '/usr/bin/go', target: '/opt/go-1.13.8/bin/go')
       end
 
       it do
-        is_expected.to contain_file('/usr/bin/gofmt').with(ensure: 'link', target: '/opt/go-1.13.8/bin/gofmt')
+        is_expected.to contain_file('gofmt-binary').with(ensure: 'link', path: '/usr/bin/gofmt', target: '/opt/go-1.13.8/bin/gofmt')
       end
     end
   end

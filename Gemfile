@@ -29,7 +29,6 @@ group :development do
   gem "codecov", '~> 0.1.10',                                    require: false
   gem "dependency_checker", '~> 0.2',                            require: false
   gem "facterdb", '~> 0.8.1',                                    require: false
-  gem "gettext-setup", '~> 0.26',                                require: false
   gem "metadata-json-lint", '~> 2.0',                            require: false
   gem "mocha", '~> 1.0',                                         require: false
   gem "parallel_tests", '~> 2.14.1',                             require: false
@@ -67,7 +66,7 @@ group :system_tests do
   gem "beaker-pe",                                                               require: false
   gem "beaker-hostgenerator"
   gem "beaker-rspec"
-  gem "beaker-docker",               git: 'https://github.com/treydock/beaker-docker', ref: 'c6d1d3dc5f1e8b7770109793d15cfc9927eb1961'
+  gem "beaker-docker"
   gem "beaker-puppet"
 end
 
