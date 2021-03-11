@@ -1,7 +1,7 @@
 # puppet-module-golang
 
 [![Puppet Forge](http://img.shields.io/puppetforge/v/treydock/golang.svg)](https://forge.puppetlabs.com/treydock/golang)
-[![Build Status](https://travis-ci.org/treydock/puppet-module-golang.png)](https://travis-ci.org/treydock/puppet-module-golang)
+[![CI Status](https://github.com/treydock/puppet-module-golang/workflows/CI/badge.svg?branch=master)](https://github.com/treydock/puppet-module-golang/actions?query=workflow%3ACI)
 
 #### Table of Contents
 
