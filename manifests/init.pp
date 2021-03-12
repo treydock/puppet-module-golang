@@ -18,7 +18,7 @@
 # @param bin_dir
 #   The path to bin directory for go and gofmt symlinks
 class golang (
-  String $version = '1.13.8',
+  String $version = '1.16.1',
   String[1] $os = downcase($facts['kernel']),
   String[1] $arch = $facts['os']['architecture'],
   Stdlib::Absolutepath $download_dir = '/tmp',
