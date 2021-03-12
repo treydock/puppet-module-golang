@@ -6,7 +6,7 @@
 <title>
   Puppet Class: golang
   
-    &mdash; Documentation by YARD 0.9.24
+    &mdash; Documentation by YARD 0.9.26
   
 </title>
 
@@ -104,7 +104,7 @@
         <span class='type'>(<tt>String</tt>)</span>
       
       
-        <em class="default">(defaults to: <tt>&#39;1.13.8&#39;</tt>)</em>
+        <em class="default">(defaults to: <tt>&#39;1.16.1&#39;</tt>)</em>
       
       
         &mdash;
@@ -280,7 +280,7 @@
         <pre class="code"><span class="info file"># File 'manifests/init.pp', line 20</span>
 
 class golang (
-  String $version = &#39;1.13.8&#39;,
+  String $version = &#39;1.16.1&#39;,
   String[1] $os = downcase($facts[&#39;kernel&#39;]),
   String[1] $arch = $facts[&#39;os&#39;][&#39;architecture&#39;],
   Stdlib::Absolutepath $download_dir = &#39;/tmp&#39;,
