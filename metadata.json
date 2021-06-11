@@ -10,11 +10,11 @@
   "dependencies": [
     {
       "name": "puppetlabs/stdlib",
-      "version_requirement": ">= 4.13.1 <7.0.0"
+      "version_requirement": ">= 4.13.1 <8.0.0"
     },
     {
       "name": "puppet/archive",
-      "version_requirement": ">= 1.0.0 <5.0.0"
+      "version_requirement": ">= 1.0.0 <6.0.0"
     }
   ],
   "operatingsystem_support": [
@@ -42,7 +42,6 @@
     {
       "operatingsystem": "Ubuntu",
       "operatingsystemrelease": [
-        "16.04",
         "18.04",
         "20.04"
       ]
@@ -60,5 +59,5 @@
   ],
   "pdk-version": "1.17.0",
   "template-url": "https://github.com/treydock/pdk-templates.git#master",
-  "template-ref": "heads/master-0-gc21ae9d"
+  "template-ref": "heads/master-0-g3ae711a"
 }
