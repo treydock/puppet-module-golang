@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/) and this project adheres to [Semantic Versioning](http://semver.org).
 
+## [v2.0.0](https://github.com/treydock/puppet-module-golang/tree/v2.0.0) (2021-06-11)
+
+[Full Changelog](https://github.com/treydock/puppet-module-golang/compare/v1.0.0...v2.0.0)
+
+### Changed
+
+- Update module dependency ranges, drop Ubuntu 16.04 [\#3](https://github.com/treydock/puppet-module-golang/pull/3) ([treydock](https://github.com/treydock))
+
 ## [v1.0.0](https://github.com/treydock/puppet-module-golang/tree/v1.0.0) (2021-03-12)
 
 [Full Changelog](https://github.com/treydock/puppet-module-golang/compare/v0.1.1...v1.0.0)
