@@ -19,7 +19,7 @@ describe 'golang class:' do
   context 'upgrades go' do
     it 'runs successfully' do
       pp = <<-EOS
-      class { 'golang': version => '1.16.1' }
+      class { 'golang': version => '1.17.7' }
       EOS
 
       apply_manifest(pp, catch_failures: true)
@@ -27,7 +27,7 @@ describe 'golang class:' do
     end
 
     describe command('/usr/bin/go version') do
-      its(:stdout) { is_expected.to match %r{1.16} }
+      its(:stdout) { is_expected.to match %r{1.17} }
     end
   end
 end
