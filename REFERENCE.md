@@ -39,7 +39,7 @@ Data type: `String`
 
 Version of Go to install
 
-Default value: `'1.16.1'`
+Default value: `'1.17.7'`
 
 ##### <a name="os"></a>`os`
 
