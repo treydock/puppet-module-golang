@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/) and this project adheres to [Semantic Versioning](http://semver.org).
 
+## [v3.0.1](https://github.com/treydock/puppet-module-golang/tree/v3.0.1) (2024-07-23)
+
+[Full Changelog](https://github.com/treydock/puppet-module-golang/compare/v3.0.0...v3.0.1)
+
+### Fixed
+
+- Fix metadata.json to match previous PR [\#8](https://github.com/treydock/puppet-module-golang/pull/8) ([treydock](https://github.com/treydock))
+
 ## [v3.0.0](https://github.com/treydock/puppet-module-golang/tree/v3.0.0) (2024-07-23)
 
 [Full Changelog](https://github.com/treydock/puppet-module-golang/compare/v2.3.0...v3.0.0)
