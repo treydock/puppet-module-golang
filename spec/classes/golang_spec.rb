@@ -5,7 +5,14 @@ require 'spec_helper'
 describe 'golang' do
   on_supported_os(hardwaremodels: ['x86_64']).each do |os, os_facts|
     context "when #{os}" do
-      let(:facts) { os_facts }
+      let(:facts) do
+        if os_facts[:os]['name'] == 'Debian'
+          os = os_facts[:os]
+          os['architecture'] = 'x86_64'
+          os_facts[:os] = os
+        end
+        os_facts
+      end
 
       it { is_expected.to compile.with_all_deps }
 
