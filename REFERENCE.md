@@ -26,22 +26,22 @@ include golang
 
 The following parameters are available in the `golang` class:
 
-* [`version`](#version)
-* [`os`](#os)
-* [`arch`](#arch)
-* [`download_dir`](#download_dir)
-* [`extract_dir`](#extract_dir)
-* [`bin_dir`](#bin_dir)
+* [`version`](#-golang--version)
+* [`os`](#-golang--os)
+* [`arch`](#-golang--arch)
+* [`download_dir`](#-golang--download_dir)
+* [`extract_dir`](#-golang--extract_dir)
+* [`bin_dir`](#-golang--bin_dir)
 
-##### <a name="version"></a>`version`
+##### <a name="-golang--version"></a>`version`
 
 Data type: `String`
 
 Version of Go to install
 
-Default value: `'1.17.7'`
+Default value: `'1.22.5'`
 
-##### <a name="os"></a>`os`
+##### <a name="-golang--os"></a>`os`
 
 Data type: `String[1]`
 
@@ -49,7 +49,7 @@ The GOOS to install
 
 Default value: `downcase($facts['kernel'])`
 
-##### <a name="arch"></a>`arch`
+##### <a name="-golang--arch"></a>`arch`
 
 Data type: `String[1]`
 
@@ -57,7 +57,7 @@ The GOARCH to install
 
 Default value: `$facts['os']['architecture']`
 
-##### <a name="download_dir"></a>`download_dir`
+##### <a name="-golang--download_dir"></a>`download_dir`
 
 Data type: `Stdlib::Absolutepath`
 
@@ -65,7 +65,7 @@ The directory of where to download Go
 
 Default value: `'/tmp'`
 
-##### <a name="extract_dir"></a>`extract_dir`
+##### <a name="-golang--extract_dir"></a>`extract_dir`
 
 Data type: `Stdlib::Absolutepath`
 
@@ -73,7 +73,7 @@ The directory where to extract Go
 
 Default value: `'/opt'`
 
-##### <a name="bin_dir"></a>`bin_dir`
+##### <a name="-golang--bin_dir"></a>`bin_dir`
 
 Data type: `Stdlib::Absolutepath`
 
