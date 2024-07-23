@@ -62,7 +62,7 @@
     "golang",
     "go"
   ],
-  "pdk-version": "2.1.0",
+  "pdk-version": "2.7.1",
   "template-url": "https://github.com/treydock/pdk-templates.git#master",
-  "template-ref": "heads/master-0-g3b13f94"
+  "template-ref": "heads/master-0-g50afcd2"
 }

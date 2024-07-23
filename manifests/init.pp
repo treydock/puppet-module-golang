@@ -18,21 +18,20 @@
 # @param bin_dir
 #   The path to bin directory for go and gofmt symlinks
 class golang (
-  String $version = '1.17.7',
+  String $version = '1.22.5',
   String[1] $os = downcase($facts['kernel']),
   String[1] $arch = $facts['os']['architecture'],
   Stdlib::Absolutepath $download_dir = '/tmp',
   Stdlib::Absolutepath $extract_dir = '/opt',
   Stdlib::Absolutepath $bin_dir = '/usr/bin',
 ) {
-
   if $os != 'linux' {
     fail("Module golang only supports Linux, not ${os}")
   }
 
   case $arch {
     'x86_64', 'amd64': { $real_arch = 'amd64' }
-    'i386':            { $real_arch = '386'   }
+    'i386':            { $real_arch = '386' }
     'aarch64':         { $real_arch = 'arm64' }
     'armv7l':          { $real_arch = 'armv7' }
     'armv6l':          { $real_arch = 'armv6' }
@@ -63,7 +62,7 @@ class golang (
     before          => [
       File['go-binary'],
       File['gofmt-binary'],
-    ]
+    ],
   }
 
   file { 'go-binary':
