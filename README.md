@@ -25,30 +25,9 @@ Install Go
 Install specific version of Go
 
     class { 'golang':
-      version => '1.14',
+      version => '1.24.12',
     }
 
 ## Reference
 
 [http://treydock.github.io/puppet-module-golang/](http://treydock.github.io/puppet-module-golang/)
-
-## Development
-
-### Testing
-
-Testing requires the following dependencies:
-
-* rake
-* bundler
-
-Install gem dependencies
-
-    bundle install
-
-Run unit tests
-
-    bundle exec rake release_checks
-
-If you have Docker installed you can run system tests
-
-    bundle exec rake beaker

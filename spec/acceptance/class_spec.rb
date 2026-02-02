@@ -6,7 +6,7 @@ describe 'golang class:' do
   context 'with default parameters' do
     it 'runs successfully' do
       pp = <<-PP
-      class { 'golang': version => '1.21.12' }
+      class { 'golang': version => '1.24.12' }
       PP
 
       apply_manifest(pp, catch_failures: true)
@@ -14,14 +14,14 @@ describe 'golang class:' do
     end
 
     describe command('/usr/bin/go version') do
-      its(:stdout) { is_expected.to match %r{1.21} }
+      its(:stdout) { is_expected.to match %r{1.24} }
     end
   end
 
   context 'with go upgrade' do
     it 'runs successfully' do
       pp = <<-PP
-      class { 'golang': version => '1.22.5' }
+      class { 'golang': version => '1.25.6' }
       PP
 
       apply_manifest(pp, catch_failures: true)
@@ -29,7 +29,7 @@ describe 'golang class:' do
     end
 
     describe command('/usr/bin/go version') do
-      its(:stdout) { is_expected.to match %r{1.22} }
+      its(:stdout) { is_expected.to match %r{1.25} }
     end
   end
 end
