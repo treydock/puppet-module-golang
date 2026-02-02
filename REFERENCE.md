@@ -39,7 +39,7 @@ Data type: `String`
 
 Version of Go to install
 
-Default value: `'1.22.5'`
+Default value: `'1.25.6'`
 
 ##### <a name="-golang--os"></a>`os`
 
