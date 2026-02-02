@@ -38,7 +38,7 @@ describe 'golang' do
           require: 'File[/opt/go-1.22.5]',
           before: [
             'File[go-binary]',
-            'File[gofmt-binary]'
+            'File[gofmt-binary]',
           ],
         )
       end
